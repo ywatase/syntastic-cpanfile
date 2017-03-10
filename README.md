@@ -5,17 +5,29 @@ cpanfile syntax checker for [syntastic](https://github.com/scrooloose/syntastic)
 
 # How to install
 
-Add symbolic link to syntax\_checker/cpanfile  
+## Using [NeoBundle][nb]
+
+1. Add `NeoBundle 'moznion/syntastic-cpanfile'` to `~/.vimrc`
+2. Re-open vim or execute `:source ~/.vimrc`
+
+## Using [vim-plug][vp]
+
+1. Add `Plug 'moznion/syntastic-cpanfile'` to `~/.vimrc`
+2. `:PlugInstall` or `$ vim +PlugInstall +qall`
+
+## By Hand
+
+Add symbolic link to syntax\_checkers/cpanfile  
 e.g.)
 
     (In syntastic-cpanfile directory;)
-    ln -s `pwd`/syntax_checker/cpanfile ~/.vim/bundle/syntastic/syntax_checkers/cpanfile
+    ln -s `pwd`/syntax_checkers/cpanfile ~/.vim/bundle/syntastic/syntax_checkers/cpanfile
 
 And also you can use a way to copy the directory. (Maybe this way is not good...)  
 e.g.)
 
     (In syntastic-cpanfile directory;)
-    cp -R syntax_checker/cpanfile/ ~/.vim/bundle/syntastic/syntax_checkers/
+    cp -R syntax_checkers/cpanfile/ ~/.vim/bundle/syntastic/syntax_checkers/
 
 
 # Configuration and Environment
